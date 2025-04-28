@@ -1,0 +1,133 @@
+.registration-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  padding: 20px;
+  position: relative;
+  height: inherit;
+  width: inherit;
+  max-width: 450px;
+  min-width: 100px;
+  background: #754e44;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 0%;
+  align-items: center;
+  justify-items: auto;
+}
+
+.registration-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px;
+  width: 100%;
+}
+
+.registration-page p {
+  font-size: 1rem;
+  color: rgb(16, 37, 37);
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.registration-icon {
+  color: rgb(16, 37, 37); /* Match the hero section color */
+  margin-bottom: 0px;
+}
+
+h2 {
+  color: rgb(16, 37, 37); /* Match the hero section color */
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  margin-top: 0px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registration-container input{
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  max-width: 90%;
+  width: 400px;
+}
+.registration-container select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  max-width: 95%;
+  width: 400px;
+}
+
+input:focus, select:focus {
+  border-color: #2e2422; /* Highlight border on focus */
+  outline: none
+}
+
+.btn {
+    background-color:rgb(77, 5, 5); /* Vibrant red color */
+    color: white;
+    padding: 2px 2px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+    flex: 1; /* Allow buttons to grow */
+    align-self: center;
+    max-width: 30%;
+}
+
+.btn:hover {
+  background-color: #362a20; /* Lighter shade on hover */
+}
+
+.login-prompt {
+  margin-top: 20px;
+  font-size: 1rem;
+
+}
+
+.link-btn {
+  background-color: transparent;
+  border: none;
+  color: #22201f; /* Match the hero section color */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link-btn:hover {
+  color: #feb47b; /* Lighter shade on hover */
+}
+
+.registration-container:hover { 
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.registration-container notification {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.notification.success {
+  background-color: green;
+}
+
+.notification.error {
+  background-color: red;
+}

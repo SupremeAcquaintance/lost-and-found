@@ -1,0 +1,236 @@
+.item-form-container {
+  background: linear-gradient(to right, #ff7e5f, darkslategray);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 98%;
+  font-family: 'Rockwell', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 4.5rem;
+  padding: 15px;
+  border-radius: 15px;
+}
+.banner{
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  height:fit-content;
+  background-color: #00e676;
+  font-family: 'Rockwell', sans-serif;
+  color: rgb(16, 37, 37); 
+  font-size: 2.1rem; 
+  margin: 0 0; 
+  padding: 2px 0; 
+  text-align: center; 
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.item-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.item-form-container:hover { 
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.item-form input,
+.item-form textarea,
+.item-form select {
+  width: 95%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #2f2f48;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.image-preview {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-top: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+
+.upload-label {
+  background: #3b3b5c;
+  color: #fff;
+  padding: 0.75rem;
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+  background-color: rgb(6, 14, 26); /* Match the save button color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  flex: 1; /* Allow buttons to grow */
+  margin: 0 60px; /* Space between buttons */
+  align-self: Center;
+  text-decoration: none;
+}
+button[type="submit"]:hover{
+  background-color: rgb(47, 60, 168); /* Darker color on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+  text-decoration: none;
+}
+
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+.match-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.match-modal {
+  background: #1e1e2f;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  position: relative;
+}
+.match-modal h3, p {
+  margin-bottom: 1rem;
+  color: #00e676;
+}
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.matched-image {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 10px;
+}
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.tab-button {
+  background-color: #2f2f48;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.tab-button:hover {
+  background-color: #3b3b5c;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tab-button.active {
+  background-color: #00e676;
+  color: #000;
+  font-weight: bold;
+}
+
+.history-grid p{
+  color:#00e676;
+  font-size: 1.2rem;
+}
+.history-container {
+  background: #2a2a3d;
+  padding: 1.5rem;
+  margin-top: auto;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.history-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 15px; 
+
+}
+.history-container h3{
+  color:#00e676
+}
+
+.history-card p {
+  margin: 0px auto;
+  color: #080808;
+  background-color: #70be98;
+  width: 100%;
+}
+.history-card { 
+  max-width: 350px;
+  max-height: 400px;
+  height:auto;
+  border-radius: 10px;
+  overflow: hidden; 
+  transition: transform 0.3s; 
+  cursor: pointer; 
+  display: flex;
+  padding: 1rem auto;
+  align-items: center;
+  text-align: left;
+  flex-direction: column; 
+  background-color: #8080ac;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.history-card:hover {
+  transform: scale(1.02);
+}
+
+.history-image {
+  width: 100%;
+  max-height: 60%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.history-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

@@ -1,0 +1,111 @@
+/* UserProfile.css */
+
+.profile-container {
+  display: flex;
+  color: #333;
+  flex-direction: column;
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  min-width: 200px; /* Reasonable minimum width */
+  width: 90%; /* Responsive width */
+  height: auto; /* Allow height to adjust based on content */
+  max-height: 90%;
+  margin: 45px auto; /* Center the container */
+  padding: 20px;
+  background: linear-gradient(to right, rgb(243, 202, 192), rgba(248, 63, 177, 0.1));
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .profile-container {
+    padding: 15px;
+  }
+}
+
+.profile-header{
+  margin-bottom: 1px;
+}
+.profile-details{
+  margin-top: 1px;
+}
+h2 {
+  color:rgb(21, 18, 32); /* Match the hero section color */
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color:rgb(32, 24, 22); /* Match the hero section color */
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+.link-btn {
+  background-color: transparent;
+  border: none;
+  color: #22201f; /* Match the hero section color */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link-btn:hover {
+  color: #feb47b; /* Lighter shade on hover */
+}
+
+.profile-form{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.profile-buttons {
+  display: flex;
+  justify-content: space-between; /* Space between buttons */
+  margin-top: 20px; /* Space above buttons */
+}
+
+.edit-btn, .homing-btn {
+  background-color: rgb(6, 14, 26); /* Match the save button color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  flex: 1; /* Allow buttons to grow */
+  margin: 0 60px; /* Space between buttons */
+  align-self: Center;
+  text-decoration: none;
+}
+
+
+.edit-btn:hover, .homing-btn:hover {
+  background-color: rgb(47, 60, 168); /* Darker color on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+  text-decoration: none;
+}
+
+.home-icon, .edit-icon{
+  color: rgb(225, 233, 233); /* Match the hero section color */
+  margin-bottom: 0px;
+}
+
+.profile-icon{
+  color: rgb(6, 14, 26); /* Match the hero section color */
+  margin-bottom: 0px;
+}

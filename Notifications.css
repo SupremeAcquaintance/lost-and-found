@@ -1,0 +1,119 @@
+.notification-container {
+  margin: auto;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background: linear-gradient(to right, rgb(36, 72, 109), #ff7e5f, rgb(36, 72, 109),#ff7e5f, rgb(36, 72, 109));
+  color: #f9fafb;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  max-height: auto;
+  overflow: scroll;
+  scrollbar-color: #3b82f6 #1f2937;
+  scrollbar-width: thin;
+  height: 430px;
+  width: 94%;
+}
+
+.notifications-form {
+  margin: 0 auto;
+  left: 0;
+  padding: 8px;
+  background:  rgb(36, 72, 109);
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 98%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 0.5rem;
+}
+
+.home-btn {
+  background: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  max-width: 200px;
+}
+
+.home-btn:hover {
+  background: #2563eb;
+}
+
+.loading, .no-notifications {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 1.2rem;
+}
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+}
+
+.notification-item {
+  display: flex;
+  align-items: flex-start;
+  background: #1f2937;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
+}
+
+.notification-item.unread {
+  background: #374151;
+}
+
+.notification-header h2{
+  color:#facc15;
+}
+
+.notification-icon {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #60a5fa;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.message {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: rgb(19, 34, 34);
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.mark-read-btn {
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+
+.mark-read-btn:hover {
+  background: #059669;
+}
+
+.bell-icon {
+  color: #facc15;
+}
